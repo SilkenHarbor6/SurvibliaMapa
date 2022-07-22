@@ -13,15 +13,15 @@
   position: absolute;
   border: 1px solid #d4d4d4;
   /*set the size of the lens:*/
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
 }
 
 .img-zoom-result {
   border: 1px solid #d4d4d4;
   /*set the size of the result div:*/
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
 }
 </style>
 <script>
@@ -84,18 +84,24 @@ function imageZoom(imgID, resultID) {
 </head>
 <body>
 
-<h1>Image Zoom</h1>
+<h1>Mapa Survival 1.12</h1>
 
-<p>Mouse over the image:</p>
+<p>Mueve el ratón sobre la imagen para ver el detalle de la zona</p>
 
-<div class="img-zoom-container">
-  <img id="myimage" src="minecraft.png" width="300" height="240">
-  <div id="myresult" class="img-zoom-result"></div>
-</div>
+<table>
+      <tr>
+        <td>
+          <div class="img-zoom-container">
+		  <img id="myimage" src="minecraft.png" width="800" height="540">
+		  </div>
+        </td>
+		<td>
+		<div id="myresult" class="img-zoom-result"></div>
+		</td>
+      </tr>
+    </table>
 
-<p>The image must be placed inside a container with relative positioning.</p>
-<p>The result can be put anywhere on the page, but must have the class name "img-zoom-result".</p>
-<p>Make sure both the image and the result have IDs. These IDs are used when a javaScript initiates the zoom effect.</p>
+<center><p>La posición de los proyectos es referencial y podría no ser exacta con respecto a la serie.</p></center>
 
 <script>
 // Initiate zoom effect:
