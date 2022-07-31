@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -83,11 +84,6 @@ function imageZoom(imgID, resultID) {
 </script>
 </head>
 <body>
-
-<h1>Mapa Survival 1.12</h1>
-
-<p>Mueve el ratón sobre la imagen para ver el detalle de la zona</p>
-
 <table>
       <tr>
         <td>
@@ -99,13 +95,21 @@ function imageZoom(imgID, resultID) {
 		<div id="myresult" class="img-zoom-result"></div>
 		</td>
       </tr>
+	  <tr>
+        <td>
+          <div class="img-zoom-container">
+		  <img id="myimage1" src="Mapa2.png" width="505" height="600">
+		  </div>
+        </td>
+		<td>
+		<div id="myresult1" class="img-zoom-result"></div>
+		</td>
+      </tr>
     </table>
-
-<center><p>La posición de los proyectos es referencial y podría no ser exacta con respecto a la serie.</p></center>
-
 <script>
 // Initiate zoom effect:
 imageZoom("myimage", "myresult");
+imageZoom("myimage1", "myresult1");
 </script>
 
 </body>
